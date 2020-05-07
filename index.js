@@ -1,22 +1,43 @@
 const inquirer = require("inquirer");
 const questions = [
-"What is your GitHub username?",
-"What is your project's name?",
-"Please write a short description of your project",
-"What kind of license should your project have?",
-"What command should be run to install dependencies?",
-"What command should be run to run tests?",
-"What does the user need to know about using the repo?",
-"What does the user need to know about contributing to the repo?"
-];
+      {
+          type: 'input',
+          name: 'username',
+          message: 'What is your GitHub username? ',
+      },
+      {
+          type: 'input',
+          name: 'project name',
+          message: 'What is your project name? ' ,
+      },
+      {
+          type: 'input',
+          name: 'description',
+          message: 'Please write a short description of your project:',
+      },
+      {
+          type: 'input',
+          name: 'license',
+          message: 'What kind of license should your project have? ',
+      },
+      {
+          type: 'input',
+          name: 'command',
+          message: 'What command should be run to install dependencies? ',
+      },
+      {
+          type: 'input',
+          name: 'repo info',
+          message: 'What does the user need to know about using the repo? ',
+      },
+      {
+          type: 'input',
+          name: 'contributing',
+          message: 'What does the user need to know about contributing to the repo? ',
+      },
+  ];
 function askQuestion() {
-    inquirer.prompt([
-    {
-      type: "input",
-      message: questions[0],
-      name:"GitHub Username"
-    }
-  ])
+    inquirer.prompt(questions)
 
 } 
 function writeToFile(fileName, data) {
