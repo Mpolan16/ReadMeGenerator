@@ -24,11 +24,11 @@ The Read Me Generator is a quick easy way to generate a Read Me file through the
 
 ## Usage
 
-node index.js
+```node index.js```
 
-? What is your GitHub username?  Mpolan16
-? What is your project name?  Read Me Generator
-? Please write a short description of your project: The Read Me Generator is an easy way to create a read me file.
+```? What is your GitHub username?  Mpolan16```
+
+https://share.getcloudapp.com/04uPygyB
 
 ## License
  This project is licensed under ![badge](https://img.shields.io/badge/License-MIT-blue).
