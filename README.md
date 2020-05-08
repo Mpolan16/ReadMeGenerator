@@ -1,10 +1,8 @@
-
-# Read me generator
-![badge](https://img.shields.io/badge/License-MIT-blue)
+# Read Me Generator
 
 ## Description
 
-easyway to ceat readme file
+The Read Me Generator is a quick easy way to generate a Read Me file through the terminal.
 
 ## Table of Contents
 
@@ -25,13 +23,20 @@ easyway to ceat readme file
 ```npm install```
 
 ## Usage
-user friendly
+
+node index.js
+
+? What is your GitHub username?  Mpolan16
+? What is your project name?  Read Me Generator
+? Please write a short description of your project: The Read Me Generator is an easy way to create a read me file.
 
 ## License
  This project is licensed under ![badge](https://img.shields.io/badge/License-MIT-blue).
 
 ## Contributing
-contributions welcome
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
 
 ## Tests
  
