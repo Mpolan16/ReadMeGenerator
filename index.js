@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
-
+const fs = require('fs');
+const { generateMarkdown } = require('./generateMarkdown');
 const questions = [
     {
         type: 'input',
@@ -39,11 +40,18 @@ const questions = [
 ];
 
 const ask = async () => {
-  return await inquirer.prompt(questions);
+    return await inquirer.prompt(questions);
 };
 
+const writeReadMeFile = data => {
+    fs.writeFile('./README.md', data, () => {
+        console.log('made the read me')
+    });
+};
 const init = async () => {
     const responses = await ask();
-    console.log(responses);
+    writeReadMeFile(generateMarkdown(responses));
 };
+
+
 init();
