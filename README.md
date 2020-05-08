@@ -1,13 +1,14 @@
 
-# Coolio
+# sfd
+![badge](https://img.shields.io/badge/License-MIT-blue)
 
 ## Description
 
-ppl dat be cool do
+sadf
 
 ## Table of Contents
 
-* Installation
+* [Installation](#installation)
 
 * Usage
 
@@ -21,11 +22,25 @@ ppl dat be cool do
 
 ## Installation
 
-sadfk
+```npm install```
 
 ## Usage
-asdf
+sdf
+
+## License
+ This project is licensed under ![badge](https://img.shields.io/badge/License-MIT-blue).
 
 ## Contributing
-asdf
+sfd
 
+## Tests
+ 
+To run tests, run the following command:
+
+```npm run test```
+
+## Questions
+
+![picture of developer](https://avatars3.githubusercontent.com/u/60660512?v=4)
+
+Email: null

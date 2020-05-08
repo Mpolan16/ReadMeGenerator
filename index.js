@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { generateMarkdown } = require('./generateMarkdown');
+const generateMarkdown = require('./generateMarkdown');
+const axios =require('axios');
 const questions = [
     {
         type: 'input',
@@ -22,6 +23,11 @@ const questions = [
         name: 'license',
         message: 'What kind of license should your project have? ',
     },
+   {
+            type: 'input',
+            name: 'test',
+            message: 'What command should be used to run tests? ',
+     },
     {
         type: 'input',
         name: 'command',
@@ -50,7 +56,14 @@ const writeReadMeFile = data => {
 };
 const init = async () => {
     const responses = await ask();
-    writeReadMeFile(generateMarkdown(responses));
+    axios.get('https://api.github.com/users/'+responses.username)
+    .then(function (githubUser){
+        var githubObj = {
+            avatar: githubUser.data.avatar_url,
+            email: githubUser.data.email
+        };
+        writeReadMeFile(generateMarkdown(responses,githubObj));
+    });
 };
 
 
