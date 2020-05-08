@@ -10,15 +10,15 @@ sadf
 
 * [Installation](#installation)
 
-* Usage
+* [Usage] (#usage)
 
-* License
+* [License] (#license)
 
-* Contributing
+* [Contributing] (#contributing)
 
-* Tests
+* [Tests] (#tests)
 
-* Questions
+* [Questions] (#questions)
 
 ## Installation
 
