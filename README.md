@@ -10,6 +10,8 @@ The Read Me Generator is a quick easy way to generate a Read Me file through the
 
 * [Usage](#usage)
 
+* [Technology](#Technology)
+
 * [License](#license)
 
 * [Contributing](#contributing)
@@ -29,6 +31,9 @@ The Read Me Generator is a quick easy way to generate a Read Me file through the
 ```? What is your GitHub username?  Mpolan16```
 
 https://share.getcloudapp.com/04uPygyB
+
+## Technology
+ Javascript, Node.js
 
 ## License
  This project is licensed under ![badge](https://img.shields.io/badge/License-MIT-blue).
